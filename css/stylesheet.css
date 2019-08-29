@@ -1,0 +1,80 @@
+/*
+Feuille de style de mon CV
+*/
+
+@font-face{ 
+	font-family: 'OpenSans';
+	src: url('fonts/OpenSans-Regular-webfont.eot');
+	src: url('fonts/OpenSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+	     url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+	     url('fonts/OpenSans-Regular-webfont.svg#webfont') format('svg');
+}
+
+
+body
+{
+	background-image: url("../img/white_background.jpg");
+	background-attachment: fixed; /* Le texte défile sur l'image */
+	background-repeat: no-repeat;
+
+    font-family: 'OpenSans', Arial, sans-serif;
+}
+
+.flag
+{
+	float: left;
+	padding-right: 10px;
+}
+
+.flag:hover
+{
+	cursor: pointer;
+}
+
+.picture
+{
+	float:right;
+	border: 3px solid white; /*rgb(7,41,178);*/
+	box-shadow: 6px 6px 1.5px rgb(101,106,110);
+}
+
+h1
+{
+	text-align: center; /* Alignement du nom */
+	border-bottom: 2px black solid;
+}
+
+.resume
+{
+	text-align: center; /* Alignement du titre */
+	font-style: italic;
+}
+
+h2
+{
+	color: rgb(10, 33, 192); /* Couleur des sections en bleu */
+	background-color: rgba(10, 33, 192, 0.25);
+	box-shadow: 1px 1px 5px black;
+	min-width: 400px;
+	padding: 2px 5px 2px 15px; /* Haut Droite Bas Gauche */
+}
+
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: rgb(10, 33, 192);
+   font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
+
+a:visited /* Apparence après visite */
+{
+   text-decoration: none;
+   color: purple;
+}
